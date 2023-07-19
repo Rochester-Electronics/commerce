@@ -290,7 +290,7 @@ abstract class Purchasable extends Element implements PurchasableInterface
 
     public function getOnSale(): bool
     {
-        return Currency::round($this->getSalePrice()) !== Currency::round($this->getPrice());
+        return $this->getSalePrice() !== $this->getPrice();
     }
 
     /**
@@ -301,7 +301,7 @@ abstract class Purchasable extends Element implements PurchasableInterface
         if (!isset($this->_sales)) {
             // Default the sales and salePrice to the original price without any sales
             $this->_sales = [];
-            $this->_salePrice = Currency::round($this->getPrice());
+            $this->_salePrice = $this->getPrice();
 
             if ($this->getId()) {
                 $this->_sales = Plugin::getInstance()->getSales()->getSalesForPurchasable($this);

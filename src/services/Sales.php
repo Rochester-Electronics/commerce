@@ -358,7 +358,7 @@ class Sales extends Component
             $salePrice = 0;
         }
 
-        return CurrencyHelper::round($salePrice);
+        return $salePrice;
     }
 
     /**
