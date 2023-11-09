@@ -360,7 +360,7 @@ class LineItem extends Model
      */
     public function getPrice(): float
     {
-        return CurrencyHelper::round($this->_price);
+        return $this->_price;
     }
 
     /**
@@ -376,7 +376,7 @@ class LineItem extends Model
      */
     public function getSalePrice(): float
     {
-        return CurrencyHelper::round($this->_salePrice);
+        return $this->_salePrice;
     }
 
     /**
@@ -392,7 +392,7 @@ class LineItem extends Model
      */
     public function getSaleAmount(): float
     {
-        return Currency::round($this->price - $this->salePrice);
+        return $this->price - $this->salePrice;
     }
 
     /**
