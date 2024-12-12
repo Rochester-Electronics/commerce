@@ -109,6 +109,9 @@ class Currencies extends Component
      */
     public function getSubunitFor(Currency|string $currency)
     {
+        // EJM: A little heavy-handed, but should ensure 4 decimals across the board.
+        return 4;
+
         if (is_string($currency)) {
             $currency = $this->getCurrencyByIso($currency);
         }
