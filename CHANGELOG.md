@@ -1,5 +1,9 @@
 # Release Notes for Craft Commerce
 
+## Unreleased
+
+- Fixed a SQL error that could occur when querying inventory transfers.
+
 ## 5.3.4 - 2025-02-26
 
 - Fixed a bug where discounts weren’t applying if an order was recalculated more than once in the same request. ([#3896](https://github.com/craftcms/commerce/issues/3896))
