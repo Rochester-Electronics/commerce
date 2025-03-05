@@ -50,11 +50,7 @@ class PurchasablePriceField extends BaseNativeField
     /**
      * @inheritdoc
      */
-    public function __construct(array $config = [])
-    {
-        unset($config['required']);
-        parent::__construct($config);
-    }
+    public bool $required = true;
 
     /**
      * @inheritdoc
