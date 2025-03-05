@@ -167,6 +167,7 @@ JS;
                     'size' => 12,
                 ]), [
                     'id' => 'base-price',
+                    'required' => true,
                     'label' => Craft::t('commerce', 'Price'),
                 ]) .
 
