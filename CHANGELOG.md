@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Fixed a bug where the site selection menu wasn’t showing on catalog pricing rules’ element selection. ([#3917](https://github.com/craftcms/commerce/issues/3917))
 - Fixed a SQL error that could occur when querying inventory transfers.
 
 ## 5.3.4 - 2025-02-26
